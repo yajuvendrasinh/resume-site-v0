@@ -12,7 +12,7 @@ const projects = [
     title: "Chicago Bike Share Data Analysis",
     description:
       "Analyzed 6M+ records from Chicago's Bike Share program using Python and Tableau to uncover usage trends and improve rider experience.",
-    image: "images/indego2.webp",
+    image: "/images/indego2.webp",
     technologies: ["Python", "Pandas", "Plotly", "Excel", "Tableau"],
     github: "https://www.kaggle.com/code/yajuvendrasinh/divvy-chicago-bikeshare-data-analysis-google-crtv2/notebook",
     demo: "https://public.tableau.com/views/BikeshareFULLDATA/Dashboard1",
