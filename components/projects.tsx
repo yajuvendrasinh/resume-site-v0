@@ -105,7 +105,7 @@ export default function Projects() {
               <CardFooter className="flex justify-between">
                 <Button asChild variant="outline" size="sm">
                   <Link href={project.github} target="_blank" rel="noopener noreferrer">
-                    <Image src="/images/code.png" alt="Code" width={16} height={16} className="mr-2" />
+                    <Image src="images/code.png" alt="Code" width={16} height={16} className="mr-2" />
                     Code
                   </Link>
                 </Button>

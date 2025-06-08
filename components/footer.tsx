@@ -132,7 +132,7 @@ export default function Footer() {
                   >
                     <span className="sr-only">Instagram</span>
                     <img 
-                      src="/images/instagram-svg.svg" 
+                      src="images/instagram-svg.svg" 
                       alt="Instagram" 
                       width="20" 
                       height="20" 
