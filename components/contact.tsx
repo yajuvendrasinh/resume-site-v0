@@ -31,12 +31,21 @@ export default function Contact() {
     setIsSubmitting(true)
     setSubmitError("")
 
-    // Simulate form submission
     try {
-      // In a real application, you would send the form data to your backend or a form service
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-      setSubmitSuccess(true)
-      setFormData({ name: "", email: "", subject: "", message: "" })
+      const response = await fetch("https://formspree.io/f/mwpblvpn", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        setSubmitSuccess(true)
+        setFormData({ name: "", email: "", subject: "", message: "" })
+      } else {
+        throw new Error("Failed to submit form")
+      }
     } catch (error) {
       setSubmitError("There was an error submitting the form. Please try again.")
     } finally {
