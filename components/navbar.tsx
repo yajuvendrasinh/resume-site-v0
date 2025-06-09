@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "./mode-toggle"
 import { usePathname } from "next/navigation"
-import type React from "react"
+import React from "react"
 
 const navItems = [
   { name: "Home", href: "#home" },

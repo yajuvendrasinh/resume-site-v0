@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowDown } from "lucide-react"
 import Link from "next/link"
-import type React from "react"
+import React from "react"
 
 export default function Hero() {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
