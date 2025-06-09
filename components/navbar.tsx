@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "./mode-toggle"
 import { usePathname } from "next/navigation"
-import React from "react"
+import type React from "react"
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -108,10 +108,10 @@ export default function Navbar() {
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-2 relative" ref={navRef}>
-              {/* Animated indicator */}
+              {/* Animated indicator - hidden when contact is active */}
               <div
                 className={`absolute top-0 h-full bg-primary/20 rounded-md transition-all duration-500 ease-out border-2 border-primary/40 ${
-                  isInitialized ? "opacity-100" : "opacity-0"
+                  isInitialized && activeSection !== "contact" ? "opacity-100" : "opacity-0"
                 }`}
                 style={{
                   left: `${indicatorStyle.left}px`,
@@ -127,8 +127,10 @@ export default function Navbar() {
                   data-section={item.href.replace("#", "")}
                   onClick={(e) => handleNavClick(e, item.href)}
                   className={`px-3 py-1 text-sm font-medium rounded-md transition-all duration-300 ease-in-out relative z-10 ${
-                    activeSection === item.href.replace("#", "") ? "text-primary" : "hover:text-foreground"
-                  }`}
+                    item.name === "Contact"
+                      ? `glow-on-hover ${activeSection === "contact" ? "active-contact" : ""}`
+                      : ""
+                  } ${activeSection === item.href.replace("#", "") ? "text-primary" : "hover:text-foreground"}`}
                 >
                   {item.name}
                 </Link>
