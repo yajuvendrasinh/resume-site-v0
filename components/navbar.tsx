@@ -108,10 +108,10 @@ export default function Navbar() {
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-2 relative" ref={navRef}>
-              {/* Animated indicator - hidden when contact is active */}
+              {/* Animated indicator */}
               <div
                 className={`absolute top-0 h-full bg-primary/20 rounded-md transition-all duration-500 ease-out border-2 border-primary/40 ${
-                  isInitialized && activeSection !== "contact" ? "opacity-100" : "opacity-0"
+                  isInitialized ? "opacity-100" : "opacity-0"
                 }`}
                 style={{
                   left: `${indicatorStyle.left}px`,
@@ -127,10 +127,8 @@ export default function Navbar() {
                   data-section={item.href.replace("#", "")}
                   onClick={(e) => handleNavClick(e, item.href)}
                   className={`px-3 py-1 text-sm font-medium rounded-md transition-all duration-300 ease-in-out relative z-10 ${
-                    item.name === "Contact"
-                      ? `glow-on-hover ${activeSection === "contact" ? "active-contact" : ""}`
-                      : ""
-                  } ${activeSection === item.href.replace("#", "") ? "text-primary" : "hover:text-foreground"}`}
+                    activeSection === item.href.replace("#", "") ? "text-primary" : "hover:text-foreground"
+                  }`}
                 >
                   {item.name}
                 </Link>
