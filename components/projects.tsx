@@ -42,7 +42,7 @@ const projects = [
     title: "Student Habits & Academic Performance Analysis",
     description:
       "Analyzed student habits and academic performance using data science (regression, clustering, classification) to uncover key predictors of exam success and provide actionable insights for improvement.",
-    image: "images/Student_Habits_Academic_Performance_Analysis.png",
+    image: "images/Student_Habits_Academic_Performance_Analysis.jpg",
     technologies: ["NumPy", "Linear Regression", "Matplotlib", "Random Forest"],
     github: "https://github.com/yajuvendrasinh/data-science-projects/tree/main/Student-Habits-and-Academic-Performance",
     demo: "https://medium.com/@yajuvendra/uncovering-the-secrets-of-academic-success-a-data-science-journey-336301a497a1",
