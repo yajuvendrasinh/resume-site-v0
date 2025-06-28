@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Yajuvendrasinh | Data Science Portfolio",
   description: "Professional portfolio showcasing projects and experience",
   icons: {
-    icon: "ezgif.gif",
+    icon: "hacker.png",
   },
 }
 
