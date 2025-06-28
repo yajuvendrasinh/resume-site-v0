@@ -106,7 +106,8 @@ export default function Navbar() {
             </Link>
           </div>
 
-          <div className="hidden md:block">
+          {/* Desktop and Landscape Mobile Navigation */}
+          <div className="hidden landscape:flex md:flex">
             <div className="ml-10 flex items-center space-x-2 relative" ref={navRef}>
               {/* Animated indicator - hidden when contact is active */}
               <div
@@ -139,7 +140,8 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="flex md:hidden">
+          {/* Mobile Portrait Navigation */}
+          <div className="flex landscape:hidden md:hidden">
             <ModeToggle />
             <Button variant="ghost" size="icon" className="ml-2 h-8 w-8" onClick={() => setIsOpen(!isOpen)}>
               <span className="sr-only">Open menu</span>
@@ -149,9 +151,9 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Portrait menu */}
       {isOpen && (
-        <div className="md:hidden bg-background border-b">
+        <div className="landscape:hidden md:hidden bg-background border-b">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <Link
@@ -159,6 +161,8 @@ export default function Navbar() {
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
                 className={`block px-3 py-1.5 rounded-md text-base font-medium transition-all duration-300 ease-in-out relative ${
+                  item.name === "Contact" ? `glow-on-hover ${activeSection === "contact" ? "active-contact" : ""}` : ""
+                } ${
                   activeSection === item.href.replace("#", "")
                     ? "text-primary bg-primary/10 border-l-4 border-primary"
                     : "hover:bg-muted hover:text-foreground"
