@@ -10,7 +10,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Yajuvendrasinh | Data Science Portfolio",
   description: "Professional portfolio showcasing projects and experience",
-    generator: 'v0.dev'
+  icons: {
+    icon: "favicon.png",
+  },
 }
 
 export default function RootLayout({
