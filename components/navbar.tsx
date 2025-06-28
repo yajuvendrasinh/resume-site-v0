@@ -24,6 +24,7 @@ export default function Navbar() {
   const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 })
   const [isInitialized, setIsInitialized] = useState(false)
   const navRef = useRef<HTMLDivElement>(null)
+  const dropdownRef = useRef<HTMLDivElement>(null)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -81,6 +82,23 @@ export default function Navbar() {
       }
     }
   }, [activeSection, isInitialized])
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false)
+      }
+    }
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [isOpen])
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault()
@@ -141,39 +159,41 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Portrait Navigation */}
-          <div className="flex landscape:hidden md:hidden">
+          <div className="flex items-center gap-2 landscape:hidden md:hidden relative" ref={dropdownRef}>
             <ModeToggle />
-            <Button variant="ghost" size="icon" className="ml-2 h-8 w-8" onClick={() => setIsOpen(!isOpen)}>
+            <Button variant="ghost" size="icon" className="h-9 w-9" onClick={() => setIsOpen(!isOpen)}>
               <span className="sr-only">Open menu</span>
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
+
+            {/* Small Dropdown Menu */}
+            {isOpen && (
+              <div className="absolute top-full right-0 mt-2 w-44 bg-background border border-border rounded-md shadow-lg z-50">
+                <div className="py-2">
+                  {navItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      onClick={(e) => handleNavClick(e, item.href)}
+                      className={`block px-3 py-2 text-sm font-medium rounded-md mx-2 my-1 transition-all duration-300 ease-in-out relative ${
+                        item.name === "Contact"
+                          ? `glow-on-hover ${activeSection === "contact" ? "active-contact" : ""}`
+                          : ""
+                      } ${
+                        activeSection === item.href.replace("#", "") && item.name !== "Contact"
+                          ? "text-primary bg-primary/20 border-2 border-primary/40"
+                          : "hover:bg-muted hover:text-foreground"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
-
-      {/* Mobile Portrait menu */}
-      {isOpen && (
-        <div className="landscape:hidden md:hidden bg-background border-b">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                onClick={(e) => handleNavClick(e, item.href)}
-                className={`block px-3 py-1.5 rounded-md text-base font-medium transition-all duration-300 ease-in-out relative ${
-                  item.name === "Contact" ? `glow-on-hover ${activeSection === "contact" ? "active-contact" : ""}` : ""
-                } ${
-                  activeSection === item.href.replace("#", "")
-                    ? "text-primary bg-primary/10 border-l-4 border-primary"
-                    : "hover:bg-muted hover:text-foreground"
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-      )}
     </header>
   )
 }
