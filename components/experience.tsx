@@ -11,9 +11,11 @@ const experiences = [
     description:
       "Led strategic IT solution planning and managed multiple cross-functional projects across diverse domains, collaborating with global stakeholders, particularly from North America and Europe to deliver scalable solutions aligned with client business goals and drive business development initiatives.",
     achievements: [
-      "Built and nurtured partnerships with premium clients, contributing to long-term revenue generation.",
+      "•	Analyzed Shopify store data (sales, traffic, conversions, AOV, LTV) using Excel and SQL to identify revenue bottlenecks.",
+      "Built reports and dashboards in Power BI, helping improve campaign ROI by 18% and boosting store performance by 15–20%.",
       "Led requirement-gathering sessions with stakeholders from North America, Europe, and India, resulting in clear project scopes and reduced rework.",
       "Coordinated with clients and developers through regular meetings to gather evolving requirements and led teams to ensure timely delivery, exceeding client expectations.",
+      "Built and nurtured partnerships with premium clients, contributing to long-term revenue generation.",
       "Delivered IT projects on time by applying Agile (Scrum) practices and streamlining communication between clients and development teams.",
       "Improved team efficiency through effective use of Trello, Asana, and other project management tools.",
       "Handled a team of 3+ juniors, fostering collaboration and helping set SOPs to ensure quality outcomes and team growth.",
