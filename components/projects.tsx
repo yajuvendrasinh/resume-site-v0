@@ -57,15 +57,6 @@ const projects = [
     github: "https://github.com/yajuvendrasinh/data-science-projects/tree/main/diabetes_prediction_project",
     demo: "https://github.com/yajuvendrasinh/data-science-projects/tree/main/diabetes_prediction_project",
   },
-  {
-    id: 6,
-    title: "Project Title 6",
-    description:
-      "Add your project description here. Describe what the project does, what technologies you used, and what insights or results you achieved.",
-    image: "placeholder.svg?height=400&width=600",
-    technologies: ["Technology 1", "Technology 2", "Technology 3"],
-    github: "https://github.com/yourusername/project6",
-    demo: "https://your-demo-link.com",
   },
 ]
 

@@ -38,19 +38,6 @@ const experiences = [
     ],
     technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "React"],
   },
-  {
-    id: 3,
-    title: "NIL NIL",
-    company: "ABC . LTD",
-    period: "Jun 2089 - Feb 2099",
-    description:
-      "Asdfsfsdd in the dsdfsdfsdnt of fdcvxvdfs sdfdcvsef and egf sdgfdtergfgfd. Grfgfdger dfgdf dfrgvdfg rgtererrrgs to dvrgdfvdv egdfervere and xgerrfrehdfbvb.",
-    achievements: [
-      "Developed dfgdfver dfgervefve rgfdg 10+ egfdergre regdfgxg",
-      "Implemented wegdfbtb rgxdgertwt ergdgrhn ertwdgxdg rgyhrtbgfb",
-      "Created nhgnccgbt UI drgregxbgt that xdrgxbtbsb user trhcfnghn",
-    ],
-    technologies: ["ABCD", "XYZ", "LMNOP", "QRSTUV", "WXY"],
   },
 ]
 
