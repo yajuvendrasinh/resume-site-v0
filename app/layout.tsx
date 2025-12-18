@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     telephone: false,
   },
   icons: {
-    icon: "/hacker.png",
-    apple: "/hacker.png",
+    icon: "/resume-site-v0/hacker.png",
+    apple: "/resume-site-v0/hacker.png",
   },
   openGraph: {
     title: "Yajuvendrasinh | Data Science Portfolio",
