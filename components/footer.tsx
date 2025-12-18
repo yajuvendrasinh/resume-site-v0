@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Github, Linkedin, Twitter } from "lucide-react"
+import { Github, Instagram, Linkedin, Twitter } from "lucide-react"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
 export default function Footer() {
@@ -131,13 +131,7 @@ export default function Footer() {
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     <span className="sr-only">Instagram</span>
-                    <img
-                      src="/images/instagram-svg.svg"
-                      alt="Instagram"
-                      width="20"
-                      height="20"
-                      className="w-5 h-5"
-                    />
+                    <Instagram className="w-5 h-5" />
                   </Link>
                 </TooltipTrigger>
                 <TooltipContent>
