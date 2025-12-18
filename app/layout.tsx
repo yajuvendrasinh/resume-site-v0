@@ -46,7 +46,12 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
     creator: "@yajuvendra",
   },
-  viewport: "width=device-width, initial-scale=1",
+  metadataBase: new URL("https://paranjayy.github.io/resume-site-v0"),
+}
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 }
 
 export default function RootLayout({

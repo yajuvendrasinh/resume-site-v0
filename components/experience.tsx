@@ -38,7 +38,6 @@ const experiences = [
     ],
     technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "React"],
   },
-  },
 ]
 
 export default function Experience() {

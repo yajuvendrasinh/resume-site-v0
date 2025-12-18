@@ -57,7 +57,6 @@ const projects = [
     github: "https://github.com/yajuvendrasinh/data-science-projects/tree/main/diabetes_prediction_project",
     demo: "https://github.com/yajuvendrasinh/data-science-projects/tree/main/diabetes_prediction_project",
   },
-  },
 ]
 
 export default function Projects() {
