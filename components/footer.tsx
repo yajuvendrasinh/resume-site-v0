@@ -131,11 +131,11 @@ export default function Footer() {
                     className="text-muted-foreground hover:text-foreground transition-colors"
                   >
                     <span className="sr-only">Instagram</span>
-                    <img 
-                      src="images/instagram-svg.svg" 
-                      alt="Instagram" 
-                      width="20" 
-                      height="20" 
+                    <img
+                      src="/resume-site-v0/images/instagram-svg.svg"
+                      alt="Instagram"
+                      width="20"
+                      height="20"
                       className="w-5 h-5"
                     />
                   </Link>

@@ -11,7 +11,7 @@ export default function About() {
         <div className="grid items-center gap-8 mt-12 md:grid-cols-2">
           <div className="flex justify-center md:order-last">
             <div className="relative w-64 h-64 overflow-hidden rounded-full sm:w-72 sm:h-72 md:w-80 md:h-80 outline outline-primary/10 outline-offset-4">
-              <Image src="images/picofme.png" alt="Profile" fill className="object-cover" priority />
+              <Image src="/resume-site-v0/images/picofme.png" alt="Profile" fill className="object-cover" priority />
             </div>
           </div>
           <div className="space-y-6">
