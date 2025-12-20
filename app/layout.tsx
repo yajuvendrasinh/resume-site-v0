@@ -31,7 +31,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yajuvendrasinh | Data Science Portfolio",
     description: "Professional portfolio showcasing projects and experience in Data Science.",
-    images: ["/og-image.png"],
+    images: [
+      {
+        url: "/og-image.png",
+        alt: "Yajuvendrasinh - Data Science Portfolio",
+      },
+    ],
   },
   icons: {
     icon: "/hacker.png",
