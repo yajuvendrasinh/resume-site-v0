@@ -1,0 +1,25 @@
+import { MetadataRoute } from 'next'
+
+export default function manifest(): MetadataRoute.Manifest {
+    return {
+        name: 'Yajuvendrasinh | Data Science Portfolio',
+        short_name: 'Yajuvendrasinh',
+        description: 'Professional portfolio showcasing projects and experience in Data Science and Business Analysis.',
+        start_url: '/',
+        display: 'standalone',
+        background_color: '#ffffff',
+        theme_color: '#ffffff',
+        icons: [
+            {
+                src: '/hacker.png',
+                sizes: '192x192',
+                type: 'image/png',
+            },
+            {
+                src: '/hacker.png',
+                sizes: '512x512',
+                type: 'image/png',
+            },
+        ],
+    }
+}

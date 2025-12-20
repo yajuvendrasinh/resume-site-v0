@@ -9,7 +9,30 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Yajuvendrasinh | Data Science Portfolio",
-  description: "Professional portfolio showcasing projects and experience",
+  description: "Professional portfolio showcasing projects and experience in Data Science and Business Analysis. Specialist in Python, SQL, and BI.",
+  metadataBase: new URL("https://yajuvendrasinh.com"), // Placeholder - update if domain is different
+  openGraph: {
+    title: "Yajuvendrasinh | Data Science Portfolio",
+    description: "Results-oriented professional blending data science expertise with business acumen to drive growth.",
+    url: "https://yajuvendrasinh.com",
+    siteName: "Yajuvendrasinh's Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Yajuvendrasinh - Data Science Portfolio",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Yajuvendrasinh | Data Science Portfolio",
+    description: "Professional portfolio showcasing projects and experience in Data Science.",
+    images: ["/og-image.png"],
+  },
   icons: {
     icon: "/hacker.png",
   },
