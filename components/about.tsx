@@ -11,20 +11,24 @@ export default function About() {
         <div className="grid items-center gap-8 mt-12 md:grid-cols-2">
           <div className="flex justify-center md:order-last">
             <div className="relative w-80 h-80 overflow-hidden rounded-full sm:w-80 sm:h-80 md:w-96 md:h-96 outline outline-primary/10 outline-offset-4">
-              <Image
-                src="/images/picofme-mobile.webp"
-                alt="Profile"
-                fill
-                className="object-cover md:hidden"
-                priority
-              />
-              <Image
-                src="/images/picofme.png"
-                alt="Profile"
-                fill
-                className="object-cover hidden md:block"
-                priority
-              />
+              <div className="relative w-full h-full md:hidden">
+                <Image
+                  src="/images/picofme-mobile.webp"
+                  alt="Profile"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="relative w-full h-full hidden md:block">
+                <Image
+                  src="/images/picofme.png"
+                  alt="Profile"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
           </div>
           <div className="space-y-6">
