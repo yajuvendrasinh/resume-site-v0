@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Yajuvendrasinh's Portfolio",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://yajuvendra.xyz/og-image.png",
         width: 1200,
         height: 630,
         alt: "Yajuvendrasinh - Data Science Portfolio",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: "Professional portfolio showcasing projects and experience in Data Science.",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://yajuvendra.xyz/og-image.png",
         width: 1200,
         height: 630,
         alt: "Yajuvendrasinh - Data Science Portfolio",
