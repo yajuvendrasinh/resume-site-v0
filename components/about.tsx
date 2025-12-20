@@ -9,10 +9,21 @@ export default function About() {
       <div className="container px-4 mx-auto">
         <h2 className="text-3xl font-bold tracking-tight text-center sm:text-4xl md:text-5xl">About Me</h2>
         <div className="grid items-center gap-8 mt-12 md:grid-cols-2">
-          <div className="flex justify-center md:order-last">
-            <div className="relative w-64 h-64 overflow-hidden rounded-full sm:w-72 sm:h-72 md:w-80 md:h-80 outline outline-primary/10 outline-offset-4">
-              <Image src="/images/picofme.png" alt="Profile" fill className="object-cover" priority />
-            </div>
+          <div className="relative w-64 h-64 overflow-hidden rounded-full sm:w-72 sm:h-72 md:w-80 md:h-80 outline outline-primary/10 outline-offset-4">
+            <Image
+              src="/images/picofme-mobile.png"
+              alt="Profile"
+              fill
+              className="object-cover md:hidden"
+              priority
+            />
+            <Image
+              src="/images/picofme.png"
+              alt="Profile"
+              fill
+              className="object-cover hidden md:block"
+              priority
+            />
           </div>
           <div className="space-y-6">
             <p className="text-lg">
