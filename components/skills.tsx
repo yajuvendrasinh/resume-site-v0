@@ -5,59 +5,20 @@ import { Progress } from "@/components/ui/progress"
 const skillCategories = [
   {
     id: 1,
-    name: "Programming & Analytics",
+    name: "Marketing & Sales",
     skills: [
-      { name: "Python (Pandas, NumPy, Scikit-learn)", level: 90 },
-      { name: "SQL (Joins, CTEs, Subqueries, Window Functions)", level: 85 },
-      { name: "R Programming", level: 70 },
-      { name: "Regex", level: 75 },
-      { name: "Excel - Power Query", level: 70 },
+      { name: "Digital Marketing Strategy", level: 85 },
+      { name: "Social Media Marketing", level: 90 },
+      { name: "Content Marketing", level: 85 },
+      { name: "SEO & SEM", level: 80 },
+      { name: "Sales Funnel Optimization", level: 75 },
+      { name: "Lead Generation", level: 85 },
+      { name: "Email Marketing", level: 80 },
+      { name: "Market Research & Analysis", level: 85 },
     ],
   },
   {
     id: 2,
-    name: "Data Visualization & BI",
-    skills: [
-      { name: "Tableau ", level: 85 },
-      { name: "Power BI", level: 80 },
-      { name: "Matplotlib & Seaborn", level: 85 },
-      { name: "Plotly Express", level: 80 },
-      { name: "Excel (Pivot Tables, VLOOKUP, Charts)", level: 90 },
-    ],
-  },
-  {
-    id: 3,
-    name: "Data Handling & Analysis",
-    skills: [
-      { name: "Exploratory Data Analysis(EDA)", level: 90 },
-      { name: "Data Cleaning & Wrangling", level: 85 },
-      { name: "Web Scraping (BeautifulSoup, Requests)", level: 70 },
-      { name: "Data Validation & Quality Checks", level: 75 },
-    ],
-  },
-    {
-    id: 4,
-    name: "Machine Learning",
-    skills: [
-      { name: "Classification (Logistic, Decision Tree, Random Forest)", level: 70 },
-      { name: "Model Evaluation & Tuning", level: 65 },
-      { name: "Hyperparameter Tuning (RandomizedSearchCV)", level: 60 },
-      { name: "Feature Engineering", level: 65 },
-    ],
-  },
-    {
-    id: 5,
-    name: "Tools & Platforms",
-    skills: [
-      { name: "Jupyter Notebook", level: 90 },
-      { name: "Git/GitHub", level: 85 },
-      { name: "Trello, Asana (Project Management)", level: 80 },
-      { name: "Google Sheets & Slides", level: 85 },
-      { name: "VS Code / JupyterLab", level: 65 },
-    ],
-  },
-  {
-    id: 6,
     name: "Soft Skills",
     skills: [
       { name: "Problem Solving", level: 90 },

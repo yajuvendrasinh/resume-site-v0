@@ -24,7 +24,7 @@ export default function Hero() {
           <span className="block mt-2 text-primary">Yajuvendrasinh Gida</span>
         </h1>
         <p className="max-w-xl mx-auto mt-6 text-xl text-muted-foreground sm:max-w-3xl md:max-w-4xl whitespace-nowrap">
-          Blending Data Science Expertise with Business Acumen to Drive Growth
+          Sales and Marketing Professional
         </p>
         <div className="flex flex-col items-center justify-center gap-4 mt-10 sm:flex-row">
           <Button asChild size="lg">

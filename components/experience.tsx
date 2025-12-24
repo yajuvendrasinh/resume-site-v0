@@ -5,13 +5,13 @@ import { Badge } from "@/components/ui/badge"
 const experiences = [
   {
     id: 1,
-    title: "Business Analyst",
+    title: "Business Development Executive",
     company: "Alian Software, Anand, Gujarat",
     period: "Jan 2024 - Present",
     description:
-      "Led strategic IT solution planning and managed multiple cross-functional projects across diverse domains, collaborating with global stakeholders, particularly from North America and Europe to deliver scalable solutions aligned with client business goals and drive business development initiatives.",
+      "Driving sales and marketing initiatives through Upwork, specializing in Shopify projects. Building and nurturing client relationships while identifying new business opportunities to drive revenue growth.",
     achievements: [
-      "Analyzed Shopify store data (sales, traffic, conversions, AOV, LTV) using Excel and SQL to identify revenue bottlenecks.",
+      "Acquired and managed premium clients through Upwork, focusing on Shopify e-commerce projects.",
       "Built reports and dashboards in Power BI, helping improve campaign ROI by 18% and boosting store performance by 10–15%.",
       "Led requirement-gathering sessions with stakeholders from North America, Europe, and India, resulting in clear project scopes and reduced rework.",
       "Coordinated with clients and developers through regular meetings to gather evolving requirements and led teams to ensure timely delivery, exceeding client expectations.",
@@ -19,9 +19,9 @@ const experiences = [
       "Delivered IT projects on time by applying Agile (Scrum) practices and streamlining communication between clients and development teams.",
       "Improved team efficiency through effective use of Trello, Asana, and other project management tools.",
       "Handled a team of 3+ juniors, fostering collaboration and helping set SOPs to ensure quality outcomes and team growth.",
-      "Enhanced the company’s online brand visibility via strategic LinkedIn content planning.",
+      "Enhanced the company's online brand visibility via strategic LinkedIn content planning.",
     ],
-    technologies: ["Business Development", "Project Management", "Agile (Scrum)", "Stakeholder Management", "Team Leadership", "Asana"],
+    technologies: ["Business Development", "Sales", "Upwork", "Shopify", "Client Acquisition", "Account Management"],
   },
   {
     id: 2,
