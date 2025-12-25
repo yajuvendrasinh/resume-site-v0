@@ -11,15 +11,9 @@ const experiences = [
     description:
       "Driving sales and marketing initiatives through Upwork, specializing in Shopify projects. Building and nurturing client relationships while identifying new business opportunities to drive revenue growth.",
     achievements: [
-      "Acquired and managed premium clients through Upwork, focusing on Shopify e-commerce projects.",
-      "Built reports and dashboards in Power BI, helping improve campaign ROI by 18% and boosting store performance by 10–15%.",
-      "Led requirement-gathering sessions with stakeholders from North America, Europe, and India, resulting in clear project scopes and reduced rework.",
-      "Coordinated with clients and developers through regular meetings to gather evolving requirements and led teams to ensure timely delivery, exceeding client expectations.",
-      "Built and nurtured partnerships with premium clients, contributing to long-term revenue generation.",
-      "Delivered IT projects on time by applying Agile (Scrum) practices and streamlining communication between clients and development teams.",
-      "Improved team efficiency through effective use of Trello, Asana, and other project management tools.",
-      "Handled a team of 3+ juniors, fostering collaboration and helping set SOPs to ensure quality outcomes and team growth.",
-      "Enhanced the company's online brand visibility via strategic LinkedIn content planning.",
+      "1....",
+      "2....",
+      "3....",
     ],
     technologies: ["Business Development", "Sales", "Upwork", "Shopify", "Client Acquisition", "Account Management"],
   },
@@ -31,10 +25,9 @@ const experiences = [
     description:
       "Managed client relationships and sales operations, leveraging data analysis tools like Excel and Google Sheets to generate insights that supported strategic decisions, while utilizing ERP systems to streamline workflows, exceed revenue targets, and enhance customer retention through proactive engagement and collaboration with cross-functional teams.",
     achievements: [
-      "Achieved 130% of revenue targets by strengthening relationships with existing paid members and driving repeat business, resulting in a 25% increase in customer retention through consistent engagement and value-driven service.",
-      "Effectively utilized proprietary ERP to efficiently track and manage all aspects of the sales process, ensuring seamless coordination with internal support teams and timely delivery of exceptional service to clients.",
-      "Utilized advanced Excel, PowerPoint and Google sheets skills to analyse sales data and create insightful reports that helped senior management make informed decisions.",
-      "Collaborated with cross-functional teams to ensure adherence to sales processes and collect market feedback to provide periodic updates to management for the formulation of policy and strategy, resulting in improved customer satisfaction and retention.",
+      "1.....",
+      "2....",
+      "3....",
     ],
     technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "React"],
   },
