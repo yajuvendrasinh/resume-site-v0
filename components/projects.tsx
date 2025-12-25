@@ -9,9 +9,9 @@ import { ExternalLink } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Project Title 1",
+    title: "Title 1",
     description:
-      "Add your project description here. Describe what the project does and what results you achieved.",
+      "Add your description here. Describe what the project does and what results you achieved.",
     image: "/placeholder.svg?height=400&width=600",
     technologies: ["Skill 1", "Skill 2", "Skill 3"],
     github: "https://github.com/yourusername/project1",
@@ -19,9 +19,9 @@ const projects = [
   },
   {
     id: 2,
-    title: "Project Title 2",
+    title: "Title 2",
     description:
-      "Add your project description here. Describe what the project does and what results you achieved.",
+      "Add your description here. Describe what the project does and what results you achieved.",
     image: "/placeholder.svg?height=400&width=600",
     technologies: ["Skill 1", "Skill 2", "Skill 3"],
     github: "https://github.com/yourusername/project2",
@@ -29,9 +29,9 @@ const projects = [
   },
   {
     id: 3,
-    title: "Project Title 3",
+    title: "Title 3",
     description:
-      "Add your project description here. Describe what the project does and what results you achieved.",
+      "Add your description here. Describe what the project does and what results you achieved.",
     image: "/placeholder.svg?height=400&width=600",
     technologies: ["Skill 1", "Skill 2", "Skill 3"],
     github: "https://github.com/yourusername/project3",
@@ -39,9 +39,9 @@ const projects = [
   },
   {
     id: 4,
-    title: "Project Title 4",
+    title: "Title 4",
     description:
-      "Add your project description here. Describe what the project does and what results you achieved.",
+      "Add your description here. Describe what the project does and what results you achieved.",
     image: "/placeholder.svg?height=400&width=600",
     technologies: ["Skill 1", "Skill 2", "Skill 3"],
     github: "https://github.com/yourusername/project4",
@@ -49,9 +49,9 @@ const projects = [
   },
   {
     id: 5,
-    title: "Project Title 5",
+    title: "Title 5",
     description:
-      "Add your project description here. Describe what the project does and what results you achieved.",
+      "Add your description here. Describe what the project does and what results you achieved.",
     image: "/placeholder.svg?height=400&width=600",
     technologies: ["Skill 1", "Skill 2", "Skill 3"],
     github: "https://github.com/yourusername/project5",
@@ -59,9 +59,9 @@ const projects = [
   },
   {
     id: 6,
-    title: "Project Title 6",
+    title: "Title 6",
     description:
-      "Add your project description here. Describe what the project does and what results you achieved.",
+      "Add your description here. Describe what the project does and what results you achieved.",
     image: "/placeholder.svg?height=400&width=600",
     technologies: ["Skill 1", "Skill 2", "Skill 3"],
     github: "https://github.com/yourusername/project6",
