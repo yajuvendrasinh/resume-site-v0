@@ -9,12 +9,12 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Yajuvendrasinh | Data Science Portfolio",
+  title: "Yajuvendrasinh | Personal Site",
   description: "Professional portfolio showcasing projects and experience in Data Science and Business Analysis. Specialist in Python, SQL, and BI.",
   metadataBase: new URL("https://yajuvendra.xyz"), // Placeholder - update if domain is different
   openGraph: {
     title: "Yajuvendrasinh | Data Science Portfolio",
-    description: "Results-oriented professional blending data science expertise with business acumen to drive growth.",
+    description: "Results-oriented professional with business acumen to drive growth.",
     url: "https://yajuvendra.xyz",
     siteName: "Yajuvendrasinh's Portfolio",
     images: [
