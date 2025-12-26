@@ -29,7 +29,7 @@ const experiences = [
       "2....",
       "3....",
     ],
-    technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "React"],
+    technologies: ["Skill 1", "Skiill 2", "Skill 3", "Skill 4", "Skill 5"],
   },
   {
     id: 3,
