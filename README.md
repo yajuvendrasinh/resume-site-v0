@@ -1,92 +1,126 @@
-# Resume Site Portfolio
+# Yajuvendrasinh Gida - Portfolio Website
 
-# https://yajuvendrasinh.github.io/resume-site-v0/
+🌐 **Live Site**: [https://yajuvendra.xyz](https://yajuvendra.xyz)
 
-A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS.
+📎 **GitHub Pages**: [https://yajuvendrasinh.github.io/resume-site-v0/](https://yajuvendrasinh.github.io/resume-site-v0/)
 
-## 🚀 Features
+A modern, responsive portfolio website showcasing my expertise in Data Science and Business Analysis. Built with Next.js 15, TypeScript, and Tailwind CSS.
 
-- **Modern Design**: Clean and professional layout
-- **Responsive**: Works on all devices and screen sizes
-- **Fast Loading**: Optimized for performance
+## 👨‍💻 About Me
+
+Results-oriented professional blending **Data Science** expertise with **Business Acumen** to drive growth. I focus on uncovering meaningful insights and translating them into impactful business strategies through statistical analysis, machine learning, and data visualization.
+
+## ✨ Features
+
+- **Modern Design**: Clean, professional layout with smooth animations
+- **Dark/Light Mode**: Theme toggle for user preference
+- **Fully Responsive**: Optimized for all devices and screen sizes
+- **Fast Performance**: Static export optimized for speed
 - **SEO Friendly**: Built with Next.js best practices
-- **GitHub Pages Ready**: Static export for easy deployment
+- **Contact Form**: Integrated with Formspree for easy communication
+- **GitHub Pages Ready**: Automated deployment with GitHub Actions
+
+## 📑 Sections
+
+| Section | Description |
+|---------|-------------|
+| **Hero** | Eye-catching introduction with call-to-action buttons |
+| **About** | Professional summary with downloadable resume |
+| **Projects** | Featured data science and analysis projects |
+| **Experience** | Professional journey and achievements |
+| **Skills** | Technical and soft skills with proficiency levels |
+| **Contact** | Contact information and message form |
 
 ## 🛠️ Tech Stack
 
-- **Framework**: Next.js 15
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **UI Components**: Radix UI & Custom Components
-- **Icons**: Lucide React
-- **Deployment**: GitHub Pages
+| Category | Technologies |
+|----------|--------------|
+| **Framework** | Next.js 15 |
+| **Language** | TypeScript |
+| **Styling** | Tailwind CSS |
+| **UI Components** | Radix UI, shadcn/ui |
+| **Theming** | next-themes |
+| **Icons** | Lucide React |
+| **Form Handling** | Formspree |
+| **Deployment** | GitHub Pages |
+
+## 📊 Featured Projects
+
+- **Chicago Bike Share Data Analysis** - Analyzed 6M+ records using Python and Tableau
+- **Global Press Freedom Analysis** - Data analysis on press freedom trends (2014-2023)
+- **Music Store Analysis With SQL** - Database analysis for business optimization
+- **Student Habits & Academic Performance** - ML analysis using regression and clustering
+- **Diabetes Prediction Model** - Random Forest classifier with ~97.1% accuracy
+
+## 🎯 Skills Highlighted
+
+- **Programming & Analytics**: Python, SQL, R, Regex, Power Query
+- **Data Visualization & BI**: Tableau, Power BI, Matplotlib, Seaborn, Plotly
+- **Data Handling**: EDA, Data Cleaning, Web Scraping, Validation
+- **Machine Learning**: Classification, Model Evaluation, Feature Engineering
+- **Tools & Platforms**: Jupyter, Git/GitHub, Trello, Asana
 
 ## 📂 Project Structure
 
 ```
-resume-site-v0/
+resume-site/
 ├── app/                 # Next.js app directory
+│   ├── layout.tsx       # Root layout with theme provider
+│   └── page.tsx         # Main page component
 ├── components/          # React components
-├── public/             # Static assets
-├── styles/             # Global styles
-├── .github/workflows/  # GitHub Actions
+│   ├── hero.tsx         # Hero section
+│   ├── about.tsx        # About section with profile
+│   ├── projects.tsx     # Projects showcase
+│   ├── experience.tsx   # Work experience timeline
+│   ├── skills.tsx       # Skills with progress bars
+│   ├── contact.tsx      # Contact form and info
+│   ├── footer.tsx       # Footer with social links
+│   ├── navbar.tsx       # Navigation bar
+│   └── ui/              # Reusable UI components
+├── public/              # Static assets
+│   └── images/          # Project and profile images
+├── styles/              # Global styles
+├── .github/workflows/   # GitHub Actions for deployment
 └── README.md
 ```
 
 ## 🏃‍♂️ Running Locally
 
-1. **Install dependencies**:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yajuvendrasinh/resume-site-v0.git
+   cd resume-site-v0
+   ```
+
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-2. **Start development server**:
+3. **Start development server**:
    ```bash
    npm run dev
    ```
 
-3. **Open browser**: Navigate to `http://localhost:3000`
+4. **Open browser**: Navigate to `http://localhost:3000`
 
 ## 📦 Building for Production
 
-1. **Build the application**:
-   ```bash
-   npm run build
-   ```
+```bash
+# Build the application
+npm run build
 
-2. **Test the build locally**:
-   ```bash
-   npm run start
-   ```
+# Test the production build locally
+npm run start
+```
 
-## 🚀 Deploying to GitHub Pages
+## 🚀 Deployment
 
-### Automatic Deployment (Recommended)
+### Automatic Deployment (GitHub Actions)
 
-1. **Create a new GitHub repository**
-
-2. **Push your code**:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/yourusername/your-repo-name.git
-   git push -u origin main
-   ```
-
-3. **Enable GitHub Pages**:
-   - Go to your repository settings
-   - Navigate to "Pages" section
-   - Set source to "GitHub Actions"
-
-4. **Update configuration** (if needed):
-   - Uncomment and update `basePath` and `assetPrefix` in `next.config.mjs`
-   - Replace `/resume-site-v0` with your actual repository name
+The site automatically deploys to GitHub Pages when you push to the `main` branch via GitHub Actions workflow.
 
 ### Manual Deployment
-
-Run the deployment script:
 
 **On Windows (PowerShell)**:
 ```powershell
@@ -101,47 +135,42 @@ chmod +x deploy.sh
 
 ## 🔧 Configuration
 
-### For GitHub Pages Deployment
+### GitHub Pages Setup
 
-Update `next.config.mjs`:
+1. Go to repository **Settings** → **Pages**
+2. Set source to **GitHub Actions**
+3. Configure `next.config.mjs` if using a custom base path:
 
 ```javascript
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/your-repo-name',        // Replace with your repo name
-  assetPrefix: '/your-repo-name',     // Replace with your repo name
-  // ... other config
+  basePath: '/your-repo-name',
+  assetPrefix: '/your-repo-name',
 }
 ```
 
-### Environment Variables
-
-No environment variables are required for basic functionality.
-
 ## 📝 Customization
 
-1. **Personal Information**: Update components with your details
-2. **Projects**: Modify `components/projects.tsx`
-3. **Skills**: Update `components/skills.tsx`
-4. **Experience**: Edit `components/experience.tsx`
-5. **Styling**: Customize Tailwind classes in components
+| Area | File |
+|------|------|
+| Personal Info | `components/hero.tsx`, `components/about.tsx` |
+| Projects | `components/projects.tsx` |
+| Experience | `components/experience.tsx` |
+| Skills | `components/skills.tsx` |
+| Contact Details | `components/contact.tsx` |
+| Styling | `tailwind.config.ts`, `styles/globals.css` |
 
-## 🤝 Contributing
+## 📫 Contact
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+- **Email**: gidayajuvendrasinh@gmail.com
+- **LinkedIn**: [linkedin.com/in/yajuvendrasinh](https://www.linkedin.com/in/yajuvendrasinh/)
+- **Location**: Gujarat, India 🇮🇳
 
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🙋‍♂️ Support
-
-If you have any questions or need help with deployment, please open an issue.
-
 ---
 
-**Built with ❤️ using Next.js and Tailwind CSS** 
+**Built with ❤️ by Yajuvendrasinh Gida using Next.js and Tailwind CSS**
