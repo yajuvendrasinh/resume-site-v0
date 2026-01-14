@@ -6,7 +6,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 
 export default function Footer() {
   return (
-    <footer className="py-8 border-t">
+    <footer className="py-4 border-t">
       <div className="container px-4 mx-auto">
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <div className="text-center md:text-left">
