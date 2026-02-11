@@ -36,7 +36,7 @@ const experiences = [
       "Utilized advanced Excel, PowerPoint and Google sheets skills to analyse sales data and create insightful reports that helped senior management make informed decisions.",
       "Collaborated with cross-functional teams to ensure adherence to sales processes and collect market feedback to provide periodic updates to management for the formulation of policy and strategy, resulting in improved customer satisfaction and retention.",
     ],
-    technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "React"],
+    technologies: ["Client Relationship Management (CRM)", "Stakeholder Management", "Advanced Excel", "CRM/ERP Systems", "Account Management"],
   },
   {
     id: 3,
